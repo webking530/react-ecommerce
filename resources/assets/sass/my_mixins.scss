@@ -1,0 +1,22 @@
+@mixin primary-btn-style() {
+	border: 1px solid $theme-color;
+	border-radius: 2px;
+	color: $theme-color;
+	background: $white;
+
+	&:hover {
+		background: $theme-color;
+		color: $white;
+	}
+}
+
+@mixin secondary-btn-style() {
+	border: 1px solid $theme-color;
+	background: $theme-color;
+	border-radius: 2px;
+	color: $white;
+
+	&:hover {
+		background: $theme-variant;
+	}
+}

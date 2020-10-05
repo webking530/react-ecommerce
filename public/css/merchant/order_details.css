@@ -1,0 +1,94 @@
+.status_loader_div
+{
+  float: left;
+    padding: 0 10px;
+}
+.setting-popup{
+  top:50px !important;
+}
+.orderplace h5 span
+{
+  font-weight: normal;
+  float:right;
+}
+.orderplace
+{
+      margin: 10px 0px;
+    padding: 10px;
+    background: #f2f2f2;
+}
+
+    .tb-type4 tbody td {
+    border-left: 1px !important ; 
+    }
+    .tb-change tbody td {
+        padding: 1px 1px 1px !important;
+    }
+    @media print {
+  a[href]:after {
+    content: none !important;
+  } 
+}
+.sold_by
+{
+  float:right;
+}
+.currency_span
+{
+  padding: 0 10px;
+}
+.price_totals
+{
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+}
+.nopad
+{
+  padding: 0 !important;
+}
+
+.product_image img
+{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+.product_details p,.price_calculation p
+{
+  margin: 0;
+}
+.pro:last-child {
+    border-bottom: 1px dashed #fff;
+}
+.pro
+{
+    background: #fff;
+
+    margin: 10px 0px;
+border-bottom: 1px dashed #ccc;
+}
+.control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+.form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+        margin-bottom: 15px;
+}
+.form-control-static {
+    min-height: 34px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+}
+.price_calculation
+{
+  background-color: #fff;
+}
+#printableArea
+{
+  background: #fff;
+    border-radius: 2px;
+}

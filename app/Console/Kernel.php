@@ -1,0 +1,47 @@
+<?php
+
+namespace App\Console;
+
+use Illuminate\Console\Scheduling\Schedule;
+use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+
+class Kernel extends ConsoleKernel
+{
+    /**
+     * The Artisan commands provided by your application.
+     *
+     * @var array
+     */
+    protected $commands = [
+        //
+    ];
+
+    /**
+     * Define the application's command schedule.
+     *
+     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @return void
+     */
+    protected function schedule(Schedule $schedule)
+    {
+        $schedule->call('App\Http\Controllers\CronController@currency')->daily();
+        $schedule->call('App\Http\Controllers\CronController@update_owe_amount')->daily();
+        $schedule->command('queue:work --tries=3 --once')->cron('* * * * *');
+        
+        /*$schedule->command('backup:run')->monthly();
+        $schedule->command('backup:run --only-db')->daily();
+        $schedule->command('backup:clean')->monthly();*/
+    }
+
+    /**
+     * Register the commands for the application.
+     *
+     * @return void
+     */
+    protected function commands()
+    {
+        $this->load(__DIR__.'/Commands');
+
+        require base_path('routes/console.php');
+    }
+}

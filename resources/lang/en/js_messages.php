@@ -1,0 +1,76 @@
+<?php
+
+
+return [
+
+    'merchant' => [
+        'price'                     => 'Price',
+        'title'                     => 'Title',
+        'total_quantity'            => 'Total Quantity',
+        'retail_price'              => 'Retail Price',
+        'charge'                    => 'Charge Price',
+        'return_ex_policy_desc'     => 'Return & Exchange Policy Description allowed only 1500 characters.',
+        'expected_delivery_from'    => 'Expected Delivery from',
+        'expected_delivery_to'      => 'Expected Delivery to',
+        'description'               => 'Description',
+        'description_char'          => 'Description allowed only 1500 characters.',
+        'image'                     => 'Image',
+        'category'                  => 'Category',
+        'ships_to'                  => 'Ships To',
+        'update_product'            => 'Update Product',
+        'edit_product'              => 'Edit product',
+        'add_new_product'           => 'Add new product',
+        'add_product'               => 'Add Product',
+        'select_category'           => 'Select Category',
+        'total_clicks'              => 'Total Clicks',
+        'total_orders'              => 'Total Orders',
+        'total_sales'               => 'Total Sales',
+        'total'                     => 'Total',
+        'clicks'                    => 'Clicks',
+        'sales'                     => 'Sales',
+        'orders'                    => 'Orders',
+        'Last'                      => 'Last',
+        'days'                      => 'Days',
+        'months'                    => 'Months',
+        'no_balance_history_found'  => 'No Balance History found',
+        'no_transfers_found'        => 'No Transfers found',
+        'copy_link'                 => 'Copy link',
+        'back'                      => 'Back ..',
+        'retail_price_greater'      => 'Retail Price should not be less than or equal to Price.',
+        'price_min'                 => 'The Price must be at least',
+        'return_policy'             => 'Return Policy',
+        'exchange_policy'           => 'Exchange Policy'
+    ],
+    'payout_preferences'  => [
+        'paypal_email'              => 'Please enter email.',
+        'paypal_email_valid'        => 'Please enter a valid email address.',
+        'paypal_address'            => 'Please enter address.',
+        'country_code'              => 'Please choose country.',
+        'paypal_city'               => 'Please enter city.',
+        'paypal_city_alphanumeric'  => 'Only alphabatic characters allowed.',
+        'payout_state'              => 'Please enter state.',
+        'payout_zip'                => 'Please enter zip code.'
+    ],
+    'checkout_payment'     => [
+        'name'             => 'Please enter name',
+        'alphanumeric'     => 'Only alphabatic characters allowed.',
+        'address'          => 'Please enter address',
+        'city'             => 'Please enter city',
+        'state'            => 'Please enter state',
+        'phone'            => 'Please enter phone number',
+        'zip'              => 'Please enter zip code',
+        'card_name'        => 'Please enter card name',
+        'card_number'      => 'Please enter a valid card number',
+        'cc_expire_month'  => 'Please enter a valid expiration month.',
+        'cc_expire_year'   => 'Please enter a valid expiration year.',
+        'cvv'              => 'Please enter a valid security code',
+        'cvv_limit'        => 'Please enter no more than 5 characters.'        
+    ],
+    'cart'                 => [
+        'soldout'           => 'Sold Out',
+        'only'              => 'Only',
+        'unavailable'       => 'Unavailable',
+        'product_available' => 'Products are available',
+    ],
+];
+       

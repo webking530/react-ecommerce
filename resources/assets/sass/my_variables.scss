@@ -1,0 +1,90 @@
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }@else if $size == tablet-portrait-max {
+    @media (max-width: 600px) { @content; }
+  } @else if $size == tablet-landscape-max {
+    @media (max-width: 991px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+
+$imgpath: "../images";
+
+$theme-color: #5b91c6;
+$theme-variant: #124e8a;
+$font-color: #4f535a;
+$main-bg: #ebeced;
+$white: #ffffff;
+$darkblue: #393d4d;
+$darkblue1: #373d48;
+$darkblue3: #3f434b;
+$darkblue4: #333333;
+$cloudblue: #4f7eb8;
+$cloudblue1: #4b77ad;
+$cloudblue2: #4C9ADC;
+$cloudblue3: #4978b3;
+$cloudblue4: #448CDA;
+$lightblue1: #1b9dec;
+$lightblue2: #767a88;
+$lightblue3: #8392A7;
+$lightblue4: #68768A;
+$darkgray: #4B525E;
+$lightwhite: #EAEBED;
+$darkgray1: #8A909B;
+$darkgray2: #636673;
+$darkgray3: #4f5663;
+$darkgray4: #505b67;
+$darkgray5: #8A8A8A;
+$darkgray6: #3d4956;
+$darkgray7: #383d48;
+$darkgray8: #3b4351;
+$darkgray9: #717B84;
+$darkgray10: #4b4f5d;
+$darkgray11: #373c4a;
+$lightgray: #dddddd;
+$tablegray: #737883;
+$tablegray1: #5E626E;
+$tablegray2: #4F5764;
+$lwhite: #FCFCFC;
+$lwhite1: #f5f5f5;
+$lwhite2: #fafafa;
+$lwhite3: #f1f1f1;
+$lwhite4: #f7f7f7;
+$lwhite5: #ccc;
+$lwhite6: #8a8f9c;
+$lwhite7: #cbcbcb;
+$lwhite8: #f2f2f2;
+$lwhite9: #f6f6f6;
+$lwhite10: #f4f4f4;
+$lwhite11: #fefefe;
+$lwhite12: #ecedf0;
+$lwhite13: #f6f6f7;
+$breadcrump: #6c757d;
+$breadcrumpa: #8b9098;
+$blackopacity5: #0000005e;
+$black: #000000;
+$drakblackl: #484848;
+$drakblack2: #1a1b1c;
+$btnshop: #2f333b;
+$placeholder: #9fa5ac;
+$nav-wrap: #3a3e46;
+$googlebtn: #db5a3c;
+$fbbtn: #5375b1;
+$fbbtn1: #446295;
+$twbtn: #55acee;
+$twbtn1: #51a3e2;
+

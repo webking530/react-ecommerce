@@ -1,0 +1,154 @@
+.popover-modal:after,
+.popover-modal:before {
+    display: inline-block;
+    content: ""
+}
+
+.popover-wrapper {
+    position: relative
+}
+
+.popover-modal {
+
+    -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0 3px 8px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,0.37);
+    box-shadow: 0 3px 8px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,0.37);
+
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transform-origin: 29px -10px;
+    opacity: 0;
+    position: absolute;
+    z-index: 1000;
+    width: 300px;
+    margin-top: 8px;
+    border-radius: 3px;
+
+    background-color: #fff
+}
+
+.popover-wrapper.open .popover-modal {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+}
+
+.popover-wrapper.open .btn-dropdown {
+    outline: 0
+}
+
+.popover-modal:before {
+    position: absolute;
+    top: -16px;
+    left: 16px;
+    border: 8px solid transparent;
+    border-bottom-color: #aab2bd
+}
+
+.popover-modal:after {
+    position: absolute;
+    top: -14px;
+    left: 17px;
+    border: 7px solid transparent;
+    border-bottom-color: #fff
+}
+
+.popover-modal .popover-body {
+    margin: 0;
+    padding: 4px 0;
+    max-height: 300px;
+    overflow: auto
+}
+
+.popover-modal .popover-body.popover-body-padded {
+    padding: 8px
+}
+
+.popover-modal .popover-header {
+    padding: 8px;
+    line-height: 19px;
+    border-bottom: 1px solid #aab2bd
+}
+
+.popover-modal .popover-header a {
+    color: #434a54;
+    text-decoration: none;
+    line-height: 19px
+}
+
+.popover-modal .popover-header a:hover {
+    color: #000
+}
+
+.popover-modal .popover-header .popover-close-btn {
+    float: right
+}
+
+.popover-wrapper.right .popover-modal {
+    transform-origin: 275px -10px;
+    right: -200px;
+}
+
+.popover-wrapper.right .popover-modal:before {
+    left: auto;
+    right: 125px;
+}
+
+.popover-wrapper.right .popover-modal:after {
+    left: auto;
+    right: 126px;
+}
+
+
+
+/*for product users like*/
+.popover-wrapper.right .popover-modal:before {
+    left: auto;
+    right: 205px;
+}
+
+.popover-wrapper.right .popover-modal:after {
+    left: auto;
+    right: 205px;
+}
+/*for product users like*/
+.popover-wrapper.right.show-more-options .popover-modal {
+    transform-origin: 275px -10px ;
+    right: -80px !important;
+    top:30px  !important;
+   }
+.popover-wrapper.right.show-more-options .popover-modal:before {
+    left: auto;
+    right: 87px  !important;
+}
+
+.popover-wrapper.right.show-more-options .popover-modal:after {
+    left: auto;
+    right: 88px  !important;
+}
+
+@media screen and (max-width: 425px){
+.popover-wrapper.right .popover-modal {
+    right: -150px;
+}
+.example-popover-3 {
+    width: 230px !important;
+}
+.popover-wrapper.right .popover-modal:before {
+    left: auto;
+    right: 155px;
+}
+.popover-wrapper.right .popover-modal:after {
+    left: auto;
+    right: 155px;
+}
+.modal.in .modal-dialog{
+    width: 100% !important;
+}
+ul.ul_like_more {
+    padding: 10px;
+}
+ul.ul_like_more .text_left {
+    padding-left: 10px !important;
+}
+}

@@ -1,0 +1,59 @@
+	.container:before{
+		display: none !important;
+	}
+	.msg-content{text-align: center;
+padding-top: 80px;}
+.store-act-full .activity-content p {
+    padding: 35px 70px 50px !important;
+    display: block !important;
+   }
+.merchant_dashboard #dash-arrow-ash::before { 
+    top: 2px !important; 
+    left: 0px;
+}
+.merchant_dashboard #dash-arrow-ash {
+     padding: 14px 15px !important;  
+}
+.partner-dash .bx-wrapper img {
+    width: 100%;
+    display: block;
+    height: 120px !important;
+}
+.partner-dash .bx-viewport {
+    height: 270px !important;
+}
+.partner-dash .ads h4 {
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+}
+.partner-dash .ads p {
+    margin-bottom: 0px;
+}
+.partner-dash .ads .btns{
+      margin-bottom: 10px;
+}
+.msg-profile-inner a, .msg-profile a{
+  color: #767a88 !important;
+}
+.head-list{width: auto !important;}
+.dash-car::before {top: 3px !important;}
+.store-act-full .activity-content .msg-content .actmesg1 p {
+    padding: 0px 0px 0px !important;
+}
+/* header activity */
+#merchant_activity .activity-content li .items {
+    display: block;
+    padding-top: 6px;
+    white-space: nowrap;
+}
+#merchant_activity .activity-content li .items img {
+    height: 48px;
+    width: 48px;
+    /*width: 20px;
+    height: 20px;*/
+    margin-right: 1px;
+    border-radius: 2px;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0.8;
+}
